@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gallery</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE 10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE 10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  -ms-flex: 50%; /* IE 10 */
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<div class="header" id="myHeader">
+  <h1>Gallery</h1>
+  <p>Click on the buttons to change the grid view.</p>
+  <button class="btn" onclick="one()">1</button>
+  <button class="btn active" onclick="two()">2</button>
+  <button class="btn" onclick="four()">4</button>
+</div>
+
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column" >
+      <a href="Casual.html"><img src="https://images-na.ssl-images-amazon.com/images/I/61Jt2bLLE%2BL._UL1024_.jpg" alt="Casual.html" style="width:100%"></a>
+      <a href="Shoes.html"><img src="https://i.pinimg.com/originals/21/85/69/2185692b65f525d5502ac3ee396a0d6c.png" alt="Shoes.html" style="width:100%"></a>
+      <a href="Bib.html"><img src="https://i5.walmartimages.com/asr/7a83e76e-6f20-4558-b858-1293e850921a_1.59debbd8b80215558868116b61bfbcdc.jpeg?odnWidth=612&odnHeight=612&odnBg=ffffff" alt="Bib.html" style="width:100%"></a>
+      <a href="Socks.html"><img src="https://i.pinimg.com/originals/28/16/30/281630b8cde1b7497cbf379b7c39a106.jpg" alt="Socks.html" style="width:100%"></a>
+      <a href="Underwear.html"><img src="https://ae01.alicdn.com/kf/H05b544d04899492ba205be65cfc6bf7eI/Baby-Boy-girl-Clothes-Long-Sleeve-Bodysuits-Underwear-Infant-Pajamas-Autumn-Top-Quality-Boys-Clothing-girl.jpg" alt="Underwear.html" style="width:100%"></a>
+      <a href="Trolley.html"><img src="https://ae01.alicdn.com/kf/H681bf002491d4ffba8c6276f67e3fa31j/High-view-stroller-light-folding-ultralight-can-sit-and-lie-portable-baby-cart-simple-umbrella-car.jpg" alt="Trolley.html" style="width:100%"></a>
+      </div>
+  <div class="column">
+      <a href="Casual.html"><img src="https://cdn.shopify.com/s/files/1/2686/6438/products/Clothing-for-Boys-Baby-Set-Birthday-Formal-Suit-Summer-Bow-Newborn-Baby-Clothes-Set-T-shirt_800x.jpg?v=1571711838" alt="Casual.html" style="width:100%"></a>
+      <a href="Shoes.html"><img src="https://my-live-01.slatic.net/original/680d5c37a6bc93e200e3c7015dd7acbd.jpg" alt="Shoes.html" style="width:100%"></a>
+      <a href="Bib.html"><img src="https://i5.walmartimages.com/asr/49001e1b-b578-4060-af40-671f73c9d0b3_1.3886c8768c33c7fafb8610120be8d6c9.jpeg?odnWidth=612&odnHeight=612&odnBg=ffffff" alt="Bib.html" style="width:100%"></a>
+      <a href="Socks.html"><img src="https://s7d2.scene7.com/is/image/BedBathandBeyond/78816246213679p?$690$&wid=690&hei=690" alt="Socks.html" style="width:100%"></a>
+      <a href="Underwear.html"><img src="https://ae01.alicdn.com/kf/H14e48f1ed919495ca561d4e4db390f04A/Baby-Boy-girl-Clothes-Long-Sleeve-Bodysuits-Underwear-Infant-Pajamas-Autumn-Top-Quality-Boys-Clothing-girl.jpg" alt="Underwear.html" style="width:100%"></a>
+      <a href="Trolley.html"><img src="https://ae01.alicdn.com/kf/H46af379607a9444c8208d24eec74a206Q/High-view-stroller-light-folding-ultralight-can-sit-and-lie-portable-baby-cart-simple-umbrella-car.jpg" alt="Trolley.html" style="width:100%"></a>
+  </div>  
+  <div class="column">
+      <a href="Accessories.html"><img src="https://5.imimg.com/data5/CG/DQ/MY-36075834/baby-girls-christening-satin-rolled-flower-headbands-500x500.png" alt="Accessories.html" style="width:100%"></a>
+      <a href="Pacifier.html"><img src="https://onogo-decrescentltd.netdna-ssl.com/media/catalog/product/cache/1/thumbnail/600x/17f82f742ffe127f42dca9de82fb58b1/5/_/5_18.jpg" alt="Pacifier.html" style="width:100%"></a>
+      <a href="BabyBottle.html"><img src="https://www.mambaby.com/thumbnail/1d/44/7e/1606869996/image_1_5_oz_1pk_ac_bottle_girl_1_1920x1920.jpg" alt="BabyBottle.html" style="width:100%"></a>
+      <a href="BabyBag.html"><img src="https://imgaz1.staticbg.com/thumb/large/oaupload/ser1/banggood/images/F5/AE/e756166d-3844-4f6c-ae73-e2f8aee97bd9.jpg.webp" alt="BabyBag.html" style="width:100%"></a>
+      <a href="BabySwing.html"><img src="https://i5.walmartimages.com/asr/123557cb-e13b-45ab-9184-f853d6ea946e_1.de5dd9000a47463e04f769daad8707cc.jpeg?odnWidth=612&odnHeight=612&odnBg=ffffff" alt="BabySwing.html" style="width:100%"></a>
+      <a href="Toys.html"><img src="https://media.brandalley.co.uk/catalog/product/cache/1/image/900x/c328707a3c432302e119a0cb3e816d26/1/7/17397193-1.jpg" alt="Toys.html" style="width:100%"></a>
+  </div>
+  <div class="column">
+      <a href="Accessories.html"><img src="http://www.troyjamesboys.com/media/catalog/product/cache/1/thumbnail/700x700/9df78eab33525d08d6e5fb8d27136e95/b/l/blackwhiteginghambowtie02.jpg" alt="Accessories.html" style="width:100%"></a>
+      <a href="Pacifier.html"><img src="https://onogo-decrescentltd.netdna-ssl.com/media/catalog/product/cache/1/thumbnail/600x/17f82f742ffe127f42dca9de82fb58b1/6/_/6_12.jpg" alt="Pacifier.html" style="width:100%"></a>
+      <a href="BabyBottle.html"><img src="https://www.mambaby.com/thumbnail/58/12/47/1606870084/image_1_5_oz_1pk_ac_bottle_boy_1_1920x1920.jpg" alt="BabyBottle.html" style="width:100%"></a>
+      <a href="BabyBag.html"><img src="https://imgaz.staticbg.com/thumb/large/oaupload/ser1/banggood/images/D7/ED/9828406a-6d48-44ff-903f-c72081a5e6a2.jpg.webp" alt="BabyBag.html" style="width:100%"></a>
+      <a href="BabySwing.html"><img src="https://i5.walmartimages.com/asr/8624d242-3448-4b6e-b2d2-92de4dca1cde_1.96df5a44445d1ff5e5ea8ae428a4636e.jpeg?odnWidth=612&odnHeight=612&odnBg=ffffff" alt="BabySwing.html" style="width:100%"></a>
+      <a href="Toys.html"><img src="https://i5.walmartimages.com/asr/aa067221-6ff3-4563-8616-579f5bcfca71_1.aedc97a5ae192f80fe0ffafbac0ad3bd.jpeg?odnWidth=612&odnHeight=612&odnBg=ffffff" alt="Toys.html" style="width:100%"></a>
+  </div>
+</div>
+
+<script>
+// Get the elements with class="column"
+var elements = document.getElementsByClassName("column");
+
+// Declare a loop variable
+var i;
+
+// Full-width images
+function one() {
+    for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "100%";  // IE10
+    elements[i].style.flex = "100%";
+  }
+}
+
+// Two images side by side
+function two() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "50%";  // IE10
+    elements[i].style.flex = "50%";
+  }
+}
+
+// Four images side by side
+function four() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "25%";  // IE10
+    elements[i].style.flex = "25%";
+  }
+}
+
+// Add active class to the current button (highlight it)
+var header = document.getElementById("myHeader");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+</body>
+</html>
