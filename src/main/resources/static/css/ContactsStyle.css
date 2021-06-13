@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'montserrat',sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(132, 226, 255);
+     min-height: 100vh;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-info{
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+}
+.card{
+    background: #2f3542;
+    padding:0 20px ;
+    margin: 0 10px;
+    width: clac(33% - 20px);
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+}
+
+.card-icon{
+    font-size: 28px;
+    background: #ff6348;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px !important;
+    border-radius: 50%;
+    transition: 0.3s linear;
+}
+
+.card:hover .card-icon{
+background: none;
+color: #ff6348;
+transform: scale(1.6);
+}
+
+.card p{
+    margin-top: 20px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    max-height: 0;
+    opacity: 0;
+    transition: 0.3s linear;
+}
+
+.card:hover p{
+    max-height: 40px;
+    opacity: 1;
+    
+}
+
+@media screen and (max-width:80px){
+.contact-info{
+    flex-direction: column;
+}
+card{
+    width: 100px;
+    max-width: 300px;
+    margin: 10px 0; 
+}
+}
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+body {
+	width: 100%;
+	height: 90vh;
+}
+
+.button {
+	display: block;
+  width: 320px;
+  max-width: 100%;
+  margin: 0 auto;
+  margin-bottom: 0;
+  overflow: hidden;
+  position: relative;
+  transform: translatez(0);
+  text-decoration: none;
+  box-sizing: border-box;
+  font-size: 24px;
+	font-weight: normal;
+	box-shadow: 0 9px 18px rgba(0,0,0,0.2);
+}
+
+.instagram {
+	text-align: center;
+	border-radius: 50px;
+  padding: 26px;
+  color: rgb(132, 226, 255);
+  background:  white;
+  transition: all 0.2s ease-out 0s;
+    left: -5%;
+    top:25%
+
+}
+
+.gradient {
+	display: block;
+  position: absolute;
+  top: 0;
+  right: 50;
+  width: 100%;
+  height: 100%;
+  bottom: auto;
+  margin: auto;
+  z-index: -1;
+  transition: all 0s ease-out 0s;
+	transform: translatex(-140px);
+	animation: 18s linear 0s infinite move;
+}

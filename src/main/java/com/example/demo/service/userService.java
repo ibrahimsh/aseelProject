@@ -24,6 +24,11 @@ public class userService {
 	 public Collection<user> getAllUser(){
 		return repos.findAll(); 
 	 }
+	 
+	 public user loginUser(String email,String password)
+	 {
+		 return repos.checkUser(email, password);
+	 }
 		
 	 public void deleteUser(user u) {
 		 repos.delete(u);
