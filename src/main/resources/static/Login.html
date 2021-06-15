@@ -5,7 +5,7 @@
 <title> Panda login</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >
     <link rel="stylesheet" href="/css/LoginStyle.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"  type="text/javascript"></script>
+<script src="script/jquery-3.6.0.min.js"  type="text/javascript"></script>
 <!--script src="/script/mainscript.js" type="text/javascript"></script-->
 	</script>
 
@@ -51,7 +51,7 @@
       <!--end of hand design-->
  <h1>Panda Login</h1>
  <div class="form-group">
-   <input required="required" class="form-control" id="Username" >
+   <input required="required" class="form-control" id="username" >
    <label class="form-label">Username</label>
  </div>
 
@@ -61,7 +61,7 @@
     class="form-control" >
    <label class="form-label">Password</label>
    <button class="btn" onclick="postApi();" > Login </button><br> 
-   <button class="bt" > <a href="signUp.html"> Don't have an account? Press here </a> </button>
+   <button class="bt" id="sign" > <a href="signUp.html"> Don't have an account? Press here </a> </button>
  </div>
 </form>
 
@@ -76,9 +76,9 @@
        <script>
 	function postApi(){
 	
-	var email=this.$("#Username").val();
+	var email=this.$("#username").val();
 	var password= this.$("#password").val();
-	console.log("post data:"+model);
+	console.log("post data:"+email+"/"+password);
 		$.ajax(
 		{
 			type:"POST",
@@ -88,16 +88,12 @@
 			
 			crossOrigin:true,
 			dataType:"json",
-			headers: {
-				'Accept': 'application/json',
-				'Content-Type': 'application/json'
-				},
-			    
-				success:function(data)
+			
+				success:function(result)
 				{
 					//console.log("successfuly"+data);
 					alert("done");
-					location.href="HomePage.html";
+					top.location.href="HomePage.html";
 				},error:function(jqXHR,testStatus,errorThrown)
 				{
 					alert("error");
@@ -106,7 +102,7 @@
 			);
 	}
 	</script>
-	<script type="text/javascript">
+	<!--  --<script type="text/javascript">
 	$(document).ready(function(){
 	$.ajax(
 			{
@@ -149,7 +145,7 @@
 			});
 	});
 	
-</script>
+</script>-->
 <script>
 function removeUser(id){
          
@@ -170,9 +166,9 @@ function removeUser(id){
 
 
    <script type="text/javascript">
-    document.getElementById("myButton").onclick = function () {
-        location.href = "signUp.html";
-    };
+   $(document).on('click','#sign', function () {
+       location.href = "signUp.html";
+   });
     </script>
 
 <script> 
